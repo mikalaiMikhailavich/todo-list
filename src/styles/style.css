@@ -1,0 +1,184 @@
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 25px;
+  background-color: wheat;
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 20px;
+  background-color: grey;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  border: 2px solid rgb(24, 17, 17);
+  border-radius: 15px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-text {
+  text-align: center;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.rename-input-text {
+  text-align: center;
+  align-self: center;
+  line-height: 45px;
+  width: 50%;
+  height: 45px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#inputEnterText {
+  max-width: 55%;
+  width: 100%;
+}
+
+#inputSearch {
+  width: 25%;
+}
+
+.button {
+  text-align: center;
+  background-color: aqua;
+  width: 15%;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: inset 1px 1px black;
+}
+
+.button_small {
+  width: 45px;
+  height: 25px;
+}
+
+.button_middle {
+  width: 65px;
+  height: 25px;
+}
+
+.button_large {
+  width: 25%;
+}
+
+.todo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  width: 75%;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.toDoBlock__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: center;
+  gap: 20px;
+}
+
+.checkCompleted {
+  display: none;
+}
+
+label {
+  color: #000;
+  cursor: pointer;
+  vertical-align: middle;
+  align-self: center;
+}
+
+label:before {
+  background-color: aqua;
+  content: " ";
+  color: #000;
+  display: inline-block;
+  font: 20px/30px Arial;
+  position: relative;
+  text-align: center;
+  width: 45px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 7px;
+  vertical-align: middle;
+}
+
+input:checked + label:before {
+  background-color: rgb(26, 136, 136);
+  content: "✓";
+  line-height: 26px;
+}
+
+.taskName {
+  text-align: center;
+  align-self: center;
+  line-height: 45px;
+  width: 50%;
+  height: 45px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.date-window {
+  text-align: center;
+  background: white;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.highlight {
+  background-color: brown;
+}
+
+.backgroundChecked {
+  background-color: rgb(53, 52, 52);
+}
+
+.checkedText {
+  text-decoration: line-through;
+}
+
+.edit-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
